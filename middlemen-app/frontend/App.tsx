@@ -8,7 +8,8 @@ import 'react-native-gesture-handler'
 import './styles/tailwind.css'
 import { AuthProvider } from './context/AuthContext';
 
-import AuthNavigator from './navigation/AuthNavigator' // You’ll replace this with logic-switch later
+import RootNavigator from './navigation'
+
 import './firebase/firebase' // Initializes Firebase once
 
 export default function App() {
@@ -18,7 +19,7 @@ export default function App() {
         <NavigationContainer>
           <SafeAreaView className="flex-1 bg-white">
             <StatusBar barStyle="dark-content" />
-            <AuthNavigator />
+            <RootNavigator />
           </SafeAreaView>
         </NavigationContainer>
       </GestureHandlerRootView>
