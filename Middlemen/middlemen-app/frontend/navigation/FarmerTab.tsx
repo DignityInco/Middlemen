@@ -13,7 +13,7 @@ const Tab = createBottomTabNavigator();
 
 const FarmerTab = () => {
   return (
-    <Tab.Navigator
+    <Tab.Navigator>
       screenOptions={({ route }) => ({
         tabBarIcon: ({ color, size }) => {
           let iconName: string;
@@ -23,7 +23,7 @@ const FarmerTab = () => {
               iconName = 'home-outline';
               break;
             case 'Barrow':
-              iconName = 'pricetags-outline';
+              iconName = 'cart-outline';
               break;
             case 'Add':
               iconName = 'add-circle-outline';
@@ -44,7 +44,6 @@ const FarmerTab = () => {
         tabBarInactiveTintColor: 'gray',
         headerShown: false,
       })}
-    >
       <Tab.Screen name="Home" component={FarmerHome} />
       <Tab.Screen name="Barrow" component={FarmerBarrow} />
       <Tab.Screen name="Add" component={AddToCatalogue} />
