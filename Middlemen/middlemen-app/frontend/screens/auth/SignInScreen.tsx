@@ -60,7 +60,7 @@ export default function SignInScreen() {
         )}
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
+      <TouchableOpacity onPress={() => navigation.navigate('SignUpScreen')}>
         <Text className="text-gray-600 text-sm">
           Don’t have an account? <Text className="text-green-700 font-semibold">Sign Up</Text>
         </Text>
